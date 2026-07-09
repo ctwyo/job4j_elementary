@@ -25,4 +25,22 @@ class CounterTest {
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void sumByEven() {
+        int start = -5;
+        int finish = 12;
+        int expected = 36;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    void sumByEvenFrom2To12() {
+        int start = 2;
+        int finish = 12;
+        int expected = 42;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
 }
