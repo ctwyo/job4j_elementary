@@ -7,7 +7,6 @@ public class ArrayDefinition {
         names[1] = "Maria";
         names[2] = "Nick";
         names[3] = "Pavel";
-
         for (String name : names) {
             System.out.println(name);
         }
